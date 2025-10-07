@@ -1,0 +1,51 @@
+body {
+  background-color: #0d0208;
+  color: #00ff41;
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.terminal {
+  padding: 20px;
+  max-width: 800px;
+  height: 90vh;
+  margin: 20px auto;
+  border: 2px solid #00ff41;
+  box-shadow: 0 0 15px #00ff41, 0 0 10px #00ff41 inset;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow-y: auto;
+  cursor: text;
+}
+
+#terminal-output {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.command-line {
+  display: flex;
+}
+
+.prompt {
+  white-space: nowrap;
+  margin-right: 7px;
+}
+
+#command-input {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  color: #00ff41;
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.output-line .error {
+  color: #ff0055;
+}
+
+.output-line .filename {
+  color: #00fff9;
+}
